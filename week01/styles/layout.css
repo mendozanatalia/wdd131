@@ -1,7 +1,6 @@
 /* WDD131 | Natalia Mendoza Teran */
 
 * {
-    box-sizing: 0;
     padding: 0;
     margin: 0;
 }
@@ -18,6 +17,7 @@ p {
 
 a {
     text-decoration: none;
+    background-color: black;
     color: white;
     display: block;
     padding: 1rem;
