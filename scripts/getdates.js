@@ -1,5 +1,7 @@
-// var currentYear = new Date().getFullYear();
-// document.getElementById('currentYear').innerHTML = currentYear;
+// Get current year
+const currentYear = new Date().getFullYear();
+document.getElementById("current-year").textContent = currentYear;
 
-// var lastModified = new Date(document.lastModified);
-// document.getElementById('lastModified').innerHTML = lastModified;
+// Get last modified
+const lastModified = document.lastModified;
+document.getElementById("last-modified").textContent = lastModified;
