@@ -1,0 +1,178 @@
+/* WDD131 | Natalia Mendoza Teran */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
+    --border-radio: .5rem;
+}
+
+/* typography */
+p {
+    font-family: "Montserrat", serif;
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+
+h1 {
+    font-family: "Caveat", serif;
+    font-size: 250%;
+    padding: 1rem;
+}
+
+h2 {
+    font-family: "Montserrat", serif;
+    padding: 1rem;
+}
+
+h3 {
+    font-family: "Montserrat", serif;
+    padding: 1rem;
+    color: #D96073;
+}
+
+figcaption {
+    font-family: "Montserrat", serif;
+    font-style: italic;
+    font-size: small;
+}
+
+a {
+    font-family: "Montserrat", serif;
+    color: black;
+    padding: .5rem;
+}
+
+ul {
+    padding: 1rem;
+}
+
+li {
+    font-family: "Montserrat", serif;
+    line-height: 3rem;
+}
+
+hr {
+    background-color: #262628;
+    height: 1px;
+    margin: 0 5rem;
+}
+
+/* HEADER */
+header {
+    background-color: #D96073;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+}
+
+header nav {
+    background-color: #D96073;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    background-color: #262628;
+    color: white;
+    font-family: "Montserrat", serif;
+    font-size: 110%;
+    padding: 1rem;
+    display: block;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+header a:hover {
+    text-decoration: none;
+    background-color: #D6DC82;
+    color: #D96073;
+    display: block;
+    text-align: center;
+}
+
+/* MAIN */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 1920px;
+    margin: 2.5rem 5rem;
+    gap: .5rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.card h2 {
+    background-color: #D6DC82;
+    color: #262628;
+    text-align: center;
+    border-radius: .5rem;
+}
+
+.card h3 {
+    border: 1px #262628;
+    text-align: center;
+}
+
+.card img {
+    width: 200px;
+    margin: 1rem;
+}
+
+.card a:hover {
+    background-color: #d9607252;
+    border-radius: .5rem;
+}
+
+.about {
+    display: flex;
+    align-items: flex-start;
+}
+
+.flag {
+    display: flex;
+    align-items: flex-start;
+}
+
+.flag figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container figure {
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background-color: #262628;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    padding: 0;
+}
+
+.last-modified {
+    color: #D6DC82;
+    font-style: italic;
+}
