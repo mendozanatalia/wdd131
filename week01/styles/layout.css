@@ -1,0 +1,65 @@
+/* WDD131 | Natalia Mendoza Teran */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 1rem;
+}
+
+.header-content {
+    height: 5rem;
+    background-color: rgb(59, 59, 59);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    display: block;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: cornflowerblue;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+
+header nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: rgb(177, 177, 177);
+    color: black;
+    height: 20rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+main aside {
+    background-color: whitesmoke;
+    color: black;
+    height: 20rem;
+}
+
+footer {
+    background-color: rgb(59, 59, 59);
+    color: white;
+    text-align: center;
+    height: 10rem;
+
+}
