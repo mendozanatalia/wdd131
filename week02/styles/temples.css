@@ -1,0 +1,19 @@
+
+
+
+/* FOOTER */
+footer {
+    background-color: #262628;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    padding: 0;
+}
+
+.last-modified {
+    color: #D6DC82;
+    font-style: italic;
+}
