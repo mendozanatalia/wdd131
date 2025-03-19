@@ -1,5 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 
+:root {
+    --box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
+    --border-radio: .5rem;
+}
 
+/* typography */
+p {
+    font-family: "Quicksand", serif;
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+
+h1 {
+    font-family: "Quicksand", serif;
+    font-size: 250%;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+h2 {
+    font-family: "Quicksand", serif;
+    padding: 1rem;
+}
+
+h3 {
+    font-family: "Quicksand", serif;
+    padding: 1rem;
+    color: #D96073;
+}
+
+figcaption {
+    font-family: "Quicksand", serif;
+    font-style: italic;
+    font-size: small;
+}
+
+a {
+    font-family: "Quicksand", serif;
+    color: black;
+    padding: .5rem;
+}
+
+ul {
+    padding: 1rem;
+}
+
+li {
+    font-family: "Quicksand", serif;
+    line-height: 3rem;
+}
+
+hr {
+    background-color: #262628;
+    height: 1px;
+    margin: 0 5rem;
+}
 
 /* FOOTER */
 footer {
