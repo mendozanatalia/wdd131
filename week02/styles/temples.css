@@ -1,70 +1,79 @@
+/* GENERAL */
+
 * {
     padding: 0;
     margin: 0;
-}
+    box-sizing: border-box;
 
-:root {
-    --box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
-    --border-radio: .5rem;
-}
-
-/* typography */
-p {
+    list-style: none;
+    text-decoration: none;
     font-family: "Quicksand", serif;
-    padding: 1rem;
-    line-height: 1.5rem;
 }
 
-h1 {
-    font-family: "Quicksand", serif;
-    font-size: 250%;
+/* HEADER */
+header {
+    width: 100%;
+    height: 80px;
+    background-color:indigo;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logo {
+    font-size: 1.5rem;
     font-weight: bold;
-    padding: 1rem;
+    color: white;
 }
 
-h2 {
-    font-family: "Quicksand", serif;
-    padding: 1rem;
+.nav-bar {
+    display: flex;
 }
 
-h3 {
-    font-family: "Quicksand", serif;
-    padding: 1rem;
-    color: #D96073;
+.nav-menu {
+    display: flex;
 }
 
-figcaption {
-    font-family: "Quicksand", serif;
-    font-style: italic;
-    font-size: small;
+.nav-link {
+    display: block;
+    color: white;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: .2s;
+    margin: 0 5px;
 }
 
-a {
-    font-family: "Quicksand", serif;
-    color: black;
-    padding: .5rem;
+.nav-link:hover {
+    background-color: white;
+    color: indigo;
 }
 
-ul {
-    padding: 1rem;
+.hamburger {
+    display: none;
 }
 
-li {
-    font-family: "Quicksand", serif;
-    line-height: 3rem;
+/* MAIN */
+/* h2 {
+    text-align: center;
 }
 
-hr {
-    background-color: #262628;
-    height: 1px;
-    margin: 0 5rem;
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
+
+img {
+    padding: 2rem;
+} */
 
 /* FOOTER */
 footer {
-    background-color: #262628;
+    background-color: indigo;
     color: white;
     text-align: center;
+    font-weight: bold;
     padding: 1rem;
 }
 
@@ -73,6 +82,6 @@ footer p {
 }
 
 .last-modified {
-    color: #D6DC82;
+    color: gold;
     font-style: italic;
 }
