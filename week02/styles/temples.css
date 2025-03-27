@@ -29,6 +29,7 @@ header {
 
 .nav-bar {
     display: flex;
+    z-index: 1000;
 }
 
 .nav-menu {
@@ -88,7 +89,6 @@ h2 {
     width: 100%;
     border-radius: 5px;
 }
-
 
 figcaption {
     text-align: center;
