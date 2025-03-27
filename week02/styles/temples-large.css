@@ -19,28 +19,38 @@
     }
 
     .nav-bar {
-        height: 0px;
         position: absolute;
-        top: 80px;
+        display: flex;
+        justify-content: center;
+        top: 70px;
         left: 0;
         right: 0;
-        width: 100vw;
         background-color: black;
         opacity: 80%;
-
+    
+        height: 0; 
         overflow: hidden;
     }
 
-    .nav-menu {
-        display: block;
-        width: fit-content;
-        margin: 80px auto;
-        text-align: center;
+    .nav-bar.active {
+        height: 350px;
         transition: .5s;
-        opacity: 0;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        transition: .5s;
+    }
+
+    .nav-menu.active {
+        opacity: 1;
     }
 
     .nav-link {
-        margin-bottom: 12px;
+        margin: 12px;
     }
 }
