@@ -1,0 +1,99 @@
+/* GENERAL */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    list-style: none;
+    text-decoration: none;
+    font-family: "Quicksand", serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* typography */
+
+h1 {
+    padding: 10px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+h2 {
+    padding: 10px;
+    text-align: center;
+}
+
+:root {
+    --box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
+    --border-radio: .5rem;
+
+    --color-red: #B42323;
+    --color-yellow: #F5B946;
+    --color-green: #28642D;
+}
+
+/* HEADER */
+header {
+    background-color: var(--color-red);
+    color: white;
+}
+
+/* MAIN */
+.line {
+    height: 15px;
+    background-color: var(--color-red);
+    padding: 0px;
+    margin: 0px;
+}
+
+.icon {
+    margin: 10px;
+    max-width: 150px;
+}
+
+.card {
+    margin: 5px;
+    max-width: 500px;
+}
+
+.card li {
+    padding: 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.card li strong {
+    text-align: right;
+}
+
+.card li span {
+    text-align: left;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--color-red);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+footer p {
+    padding: 0;
+}
+
+.last-modified {
+    color: gold;
+    font-style: italic;
+}
+
+/* @media only screen and (max-width: 420px) {
+    header {
+
+    }
+} */
