@@ -28,6 +28,14 @@
         left: -15px;
     }
 
+    #weather .card-header h2::after {
+        content: " ⛅";
+    }
+
+    #weather .card-header img {
+        display: none;
+    }
+
     .icon {
         max-width: 45px;
     }
