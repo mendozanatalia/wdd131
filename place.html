@@ -9,6 +9,7 @@
 
     <!-- CSS reference -->
     <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
     <!-- JS reference -->
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/place.js" defer></script>
@@ -20,35 +21,48 @@
 <body>
     <header>
         <h1>Bolivia</h1>
+        <div class="line-1"></div>
     </header>
     <main>
-        <img class="hero" src="images/place/laguna-colorada-mobile.jpg" alt="bolivia-laguna-colorada">
-        <div class="line-1"></div>
-        
-        <div class="card">
-            <h2>Data</h2>
-            <ul>
-                <li><strong>Area:</strong>   <span>124124124 km</span></li>
-                <li><strong>Population:</strong>   <span>23513513</span></li>
-                <li><strong>Capital:</strong>   <span>Sucre</span></li>
-                <li><strong>Languages:</strong>   <span>Castellano, Quechua, Aymara, Guaraní</span></li>
-                <li><strong>Currency:</strong>   <span>Bolivianos (BOB, Bs.)</span></li>
-                <li><strong>Time Zone:</strong>   <span>UTC-4</span></li>
-                <li><strong>Calling Code:</strong>   <span>+591</span></li>
-                <li><strong>Internet:</strong>   <span>.bo</span></li>
-            </ul>
-        </div>
+        <!-- hero image -->
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 800px)" srcset="images/place/hero-large.webp">
+                <img src="images/place/hero-mobile.webp" alt="Temple" width="1080" height="1350">
+            </picture>
 
-        <div class="line-2"></div>
-        <div class="card">
-            <h2>Weather</h2>
-            <img class="icon" src="images/place/weather-icon.svg" alt="weather-icon">
-            <ul>
-                <li><strong>Temperature:</strong>   <span></span></li>
-                <li><strong>Conditions:</strong>   <span></span></li>
-                <li><strong>Wind:</strong>   <span></span></li>
-                <li><strong>Wind Chill:</strong>   <span></span></li>
-            </ul>
+            <!-- data card -->
+            <div class="card" id="data">
+                <div class="card-header">
+                    <h2>Data</h2>
+                </div>
+                <ul class="card-info">
+                    <li><strong>Area:</strong>   <span>124124124 km</span></li>
+                    <li><strong>Population:</strong>   <span>23513513</span></li>
+                    <li><strong>Capital:</strong>   <span>Sucre</span></li>
+                    <li><strong>Languages:</strong>   <span>Castellano, Quechua, Aymara, Guaraní</span></li>
+                    <li><strong>Currency:</strong>   <span>Bolivianos (BOB, Bs.)</span></li>
+                    <li><strong>Time Zone:</strong>   <span>UTC-4</span></li>
+                    <li><strong>Calling Code:</strong>   <span>+591</span></li>
+                    <li><strong>Internet:</strong>   <span>.bo</span></li>
+                </ul>
+            </div>
+    
+            <div class="line-2"></div>
+            
+            <!-- weather card -->
+            <div class="card" id="weather">
+                <div class="card-header">
+                    <h2>Weather</h2>
+                    <img class="icon" src="images/place/weather-icon.svg" alt="weather-icon">
+                </div>
+                <ul class="card-info">
+                    <li><strong>Temperature:</strong>   <span></span></li>
+                    <li><strong>Conditions:</strong>   <span></span></li>
+                    <li><strong>Wind:</strong>   <span></span></li>
+                    <li><strong>Wind Chill:</strong>   <span></span></li>
+                </ul>
+            </div>     
         </div>
 
     </main>

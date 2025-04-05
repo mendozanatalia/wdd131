@@ -9,8 +9,13 @@
     font-family: "Quicksand", serif;
 }
 
-img {
-    max-width: 100%;
+:root {
+    --box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
+    --border-radio: .5rem;
+
+    --color-red: #B42323;
+    --color-yellow: #F5B946;
+    --color-green: #28642D;
 }
 
 /* typography */
@@ -22,17 +27,8 @@ h1 {
 }
 
 h2 {
-    padding: 10px;
+    padding: 5px;
     text-align: center;
-}
-
-:root {
-    --box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
-    --border-radio: .5rem;
-
-    --color-red: #B42323;
-    --color-yellow: #F5B946;
-    --color-green: #28642D;
 }
 
 /* HEADER */
@@ -41,29 +37,42 @@ header {
     color: white;
 }
 
-/* MAIN */
 .line-1 {
     height: 15px;
-    background-color: var(--color-red);
-    padding: 0px;
-    margin: 0px;
+    background-color: var(--color-yellow);
+}
+
+
+/* MAIN */
+.hero {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .line-2 {
     height: 1px;
-    background-color: gray;
-    padding: 0px;
-    margin: 0px;
-}
-
-.icon {
-    margin: 10px;
-    max-width: 150px;
+    background-color: lightgray;
 }
 
 .card {
-    margin: 5px;
-    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 30px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
 }
 
 .card li {
@@ -81,9 +90,13 @@ header {
     text-align: left;
 }
 
+.icon {
+    max-width: 100px;
+}
+
 /* FOOTER */
 footer {
-    background-color: var(--color-red);
+    background-color: var(--color-green);
     color: white;
     text-align: center;
     font-weight: bold;
@@ -97,14 +110,4 @@ footer p {
 .last-modified {
     color: gold;
     font-style: italic;
-}
-
-@media only screen and (max-width: 420px) {
-    header {
-        padding: 0 50px;
-    }
-
-    .hero {
-        max-width: 420px;
-    }
 }
