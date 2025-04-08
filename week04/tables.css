@@ -1,0 +1,38 @@
+body {
+    padding: 10px;
+}
+
+table {
+    background-color: white;
+    width: 500px;
+    border: 1px solid lightcoral;
+    text-align: center;
+
+    caption {
+        caption-side: bottom;
+        font-size: small;
+        padding: 10px;
+        font-style: italic;
+    }
+
+    thead {
+        background-color: lightcoral;
+
+        th {
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        tr:nth-last-child(1) {
+            background-color: rgb(241, 177, 177);
+        }
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #eee;
+      }
+}
+
+.blank {
+    background-color: lightcoral;
+}
