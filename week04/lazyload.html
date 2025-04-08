@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131: Lazy Load</title>
+    <meta name="description" content="WDD131 - Dynamic Web Fundamentals - Week 04: Lazy Load">
+    <meta name="author" content="Natalia Mendoza">
+
+    <!-- CSS reference -->
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <!-- JS reference -->
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/lazyload.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Lazy Loading Activity</h1>
+    </header>
+    <main>
+        <picture>
+            <img src="images/nmtstudio-01.jpg" alt="Copta Notebook" loading="lazy" width="400" height="600">
+        </picture>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, dolorem inventore placeat tempore quaerat officia sunt explicabo magnam architecto deleniti repudiandae, natus laborum voluptate quam quisquam molestiae nihil ratione nulla?</p>
+        <picture>
+            <img src="images/nmtstudio-02.jpg" alt="Copta Notebook" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/nmtstudio-03.jpg" alt="Copta Notebook" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/nmtstudio-04.jpg" alt="Mini Album" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/nmtstudio-05.jpg" alt="Mini Album" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/nmtstudio-06.jpg" alt="Mini Album" loading="lazy" width="400" height="600">
+        </picture>
+    </main>
+    <footer>
+        <p>©<span id="current-year"></span> | Natalia Mendoza | Cochabamba, Bolivia</p>
+        <p class="last-modified">Last Modification: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
