@@ -101,7 +101,7 @@ function createCardTemplate(temple) {
         <h3>${temple.templeName}</h3>
         <p><strong>Location:</strong> ${temple.location}</p>
         <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-        <p><strong>Area:</strong> ${temple.area}</p>
+        <p><strong>Area:</strong> ${temple.area} sq ft</p>
         <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
     `;
     return templeCard;
@@ -145,29 +145,35 @@ function displayTemples(temples) {
     });
 }
 
+
 // Display filtered images
 document.getElementById("old").addEventListener("click", () => {
     const oldTemples = filterTemples("old");
     displayTemples(oldTemples);
+    document.querySelector(".tab-title").textContent = `Old Temples (${oldTemples.length})`;
 });
 
 document.getElementById("new").addEventListener("click", () => {
     const newTemples = filterTemples("new");
     displayTemples(newTemples);
+    document.querySelector(".tab-title").textContent = `New Temples (${newTemples.length})`;
 });
 
 document.getElementById("large").addEventListener("click", () => {
     const largeTemples = filterTemples("large");
     displayTemples(largeTemples);
+    document.querySelector(".tab-title").textContent = `Large Temples (${largeTemples.length})`;
 });
 
 document.getElementById("small").addEventListener("click", () => {
     const smallTemples = filterTemples("small");
     displayTemples(smallTemples);
+    document.querySelector(".tab-title").textContent = `Small Temples (${smallTemples.length})`;
 });
 
 document.getElementById("home").addEventListener("click", () => {
     displayTemples(temples);
+    document.querySelector(".tab-title").textContent = `Home (${temples.length})`;
 });
 
 displayTemples(temples);
