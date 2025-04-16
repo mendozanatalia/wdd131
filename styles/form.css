@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    list-style: none;
+    text-decoration: none;
+    font-family: "Quicksand", serif;
+}
+
+:root {
+    --box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* HEADER */
+header {
+    background-color: teal;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+/* MAIN */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* FORM */
+form {
+    max-width: 600px;
+    padding: 1.5rem;
+    background: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+  
+.form-group, fieldset {
+    margin-bottom: 1rem;
+}
+  
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+  
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 5px;
+}
+  
+input[type="submit"] {
+    background-color: teal;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+input[type="submit"]:hover {
+    background-color: rgb(1, 100, 100);
+}
+  
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+}
+  
+legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: teal;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+footer p {
+    padding: 0;
+}
+
+.last-modified {
+    color: gold;
+    font-style: italic;
+}
