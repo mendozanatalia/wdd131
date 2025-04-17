@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petita Regalos - Gift Store</title>
+    <meta name="description" content="WDD131 - Dynamic Web Fundamentals: Final Course Project">
+    <meta name="author" content="Natalia Mendoza">
+
+    <!-- CSS reference -->
+    <link rel="stylesheet" href="styles/petita-regalos.css">
+    <link rel="stylesheet" href="styles/petita-regalo-large.css">
+    <!-- JS reference -->
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/petita-regalos.js" defer></script>
+
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.cdnfonts.com/css/butterscotch" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo-blanco.png" alt="Logo" height="50">
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-menu">
+                <li><a href="#" id="home" class="nav-link">Home</a></li>
+                <li><a href="#" id="about" class="nav-link">About Us</a></li>
+                <li><a href="#" id="story" class="nav-link">Our Story</a></li>
+                <li><a href="#" id="products" class="nav-link">Products</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 1100px)" srcset="images/hero-large.jpg">
+                <source media="(min-width: 800px)" srcset="images/hero-medium.jpg">
+                <img src="images/hero-small.jpg" alt="Hero" width="390" height="390">
+            </picture>
+        </section>
+
+        <!-- INTRO -->
+        <section class="container">
+            <h2>Handmade with Heart</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, doloremque sequi ipsam, explicabo dicta ea laborum eaque amet aspernatur repellat vel! Corrupti, enim vitae consectetur suscipit quia consequuntur reiciendis necessitatibus!</p>
+            <button>See Products!</button>
+        </section>
+
+        <!-- WE ARE -->
+        <section class="container we-are">
+            <div>
+                <img src="images/babygrogu-milk.jpg" alt="Natalia & Kelya">
+            </div>
+            <div>
+                <h2>Hi! We are Natalia & Kelya,</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus dolore consequatur officiis? Dolorem animi accusantium deleniti quaerat. Vitae aliquid sapiente quasi facere reprehenderit error quidem impedit a aliquam quo. Itaque!</p>
+                <button>Our Story</button>
+            </div>
+        </section>
+
+        <!-- GIFT OPTIONS -->
+        <section class="container gift-options">
+            <h2>Looking for Unique Gift Options?</h2>
+            <div>
+                <img class="card" src="images/notebook.jpg" alt="personalized-notebooks">
+                <button>Personalized Notebooks</button>
+            </div>
+            <div>
+                <img class="card" src="images/plushies.jpg" alt="plushies">
+                <button>Plushies</button>
+            </div>
+            <div>
+                <img class="card" src="images/jewerly.jpg" alt="jewerly">
+                <button>Jewelry</button>
+            </div>
+        </section>
+
+        <!-- DELIVERY -->
+        <section class="container delivery">
+            <div class="card">
+                <h3>National Shipments</h3>
+                <img src="images/emoji-national-shipment.png" alt="national">
+            </div>
+            <div class="card">
+                <h3>Delivery All Around The City</h3>
+                <img src="images/emoji-delivery.png" alt="city">
+            </div>
+            <div class="card">
+                <h3>Online Payments</h3>
+                <img src="images/emoji-online-payment.png" alt="payment">
+            </div>            
+        </section>
+
+        <!-- INSTAGRAM -->
+        <section class="container">
+            <img src="images/instagram-icon.svg" alt="instagram-icon" width="30">
+            <h3>@petitaregalos.bo</h3>
+            <p>We are on Instagram!</p>
+            <button>Follow Us</button>
+        </section>
+
+        <!-- CLIENTS -->
+        <section class="container clients">
+            <h2>Clients Reactions</h2>
+            <p>Here are some clients' reactions recieving their gifts...</p>
+            <img class="card" src="images/arboles-navidad.webp" alt="whatsapp-capture">
+            <img class="card" src="images/arboles-navidad.webp" alt="whatsapp-capture">
+            <img class="card" src="images/arboles-navidad.webp" alt="whatsapp-capture">
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p>©<span id="current-year"></span> • Natalia Mendoza • Cochabamba, Bolivia</p>
+        <p class="last-modified">Last Modification: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
