@@ -61,7 +61,6 @@ button:hover {
     background-color: var(--chamoisee);
 }
 
-
 /* ------- HEADER ------- */
 header {
     width: 100%;
@@ -102,20 +101,7 @@ header {
     display: none;
 }
 
-/* ------- MAIN ------- */
-/* hero */
-.hero {
-    display: flex;
-    flex-direction: column;
-}
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-/* general */
+/* sections */
 .container {
     display: flex;
     flex-direction: column;
@@ -137,49 +123,13 @@ header {
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     object-fit: cover;
+    padding: 15px;
 }
 
-/* sections */
-.we-are {
-    background-color: var(--chamoisee);
-    color: white;
-}
-
-.we-are img {
-    width: 300px;
-    height: auto;
-    border: solid 15px white;
-    margin-bottom: 20px;
-    box-shadow: var(--box-shadow);
-}
-
-.gift-options img {
-    width: 250px;
+.card img {
+    width: 100%;
     height: auto;
     border-radius: 5px;
-    box-shadow: var(--box-shadow);
-}
-
-.gift-options button {
-    background-color: var(--chamoisee);
-}
-
-.gift-options button:hover {
-    background-color: var(--bistre);
-}
-
-.delivery {
-    background-color: var(--citron);
-}
-
-.delivery img {
-    width: 100px;
-    margin: 10px;
-}
-
-.clients {
-    background-color: var(--bistre);
-    color: white;
 }
 
 /* ------- FOOTER ------- */
@@ -198,4 +148,65 @@ footer p {
 .last-modified {
     color: var(--citron);
     font-style: italic;
+}
+
+@media only screen and (min-width: 820px) {
+    header {
+        padding: 0 20px;
+        font-size: medium;
+    }
+    .container {
+        padding: 30px 100px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    /* hamurger menu */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 7px;
+        border-radius: 20px;
+    }
+
+    .nav-bar {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: 100px;
+        left: 0;
+        right: 0;
+        background-color: var(--bistre);
+    
+        height: 0; 
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 350px;
+        transition: .5s;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        transition: .5s;
+    }
+
+    .nav-menu.active {
+        opacity: 1;
+    }
+
+    .nav-link {
+        margin: 12px;
+    }
 }

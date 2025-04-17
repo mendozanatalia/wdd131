@@ -1,0 +1,50 @@
+/* hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* sections */
+.we-are {
+    background-color: var(--chamoisee);
+    color: white;
+}
+
+.we-are img {
+    width: 300px;
+    height: auto;
+    border: solid 15px white;
+    margin-bottom: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+.gift-options button {
+    background-color: var(--chamoisee);
+}
+
+.gift-options button:hover {
+    background-color: var(--bistre);
+}
+
+.delivery {
+    background-color: var(--citron);
+}
+
+.delivery img {
+    width: 100px;
+    margin: 10px;
+}
+
+.clients {
+    background-color: var(--bistre);
+    color: white;
+}
+
+.clients img {
+    padding: 0;
+}
