@@ -1,10 +1,15 @@
-@media only screen and (max-width: 1100px) {
+@media only screen and (min-width: 820px) {
     header {
-        padding: 0 50px;
+        padding: 0 20px;
+        font-size: medium;
+    }
+    .container {
+        padding: 30px 100px;
     }
 }
 
 @media only screen and (max-width: 800px) {
+    /* hamurger menu */
     .hamburger {
         display: block;
         cursor: pointer;

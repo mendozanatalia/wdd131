@@ -23,7 +23,7 @@
 </head>
 <body>
     <header>
-        <img src="images/logo-blanco.png" alt="Logo" height="50">
+        <img id="logo" src="images/logo-blanco.png" alt="Logo" height="50">
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
@@ -33,8 +33,8 @@
             <ul class="nav-menu">
                 <li><a href="#" id="home" class="nav-link">Home</a></li>
                 <li><a href="#" id="about" class="nav-link">About Us</a></li>
-                <li><a href="#" id="story" class="nav-link">Our Story</a></li>
                 <li><a href="#" id="products" class="nav-link">Products</a></li>
+                <li><a href="#" id="contact" class="nav-link">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -43,9 +43,9 @@
         <!-- HERO -->
         <section class="hero">
             <picture>
-                <source media="(min-width: 1100px)" srcset="images/hero-large.jpg">
-                <source media="(min-width: 800px)" srcset="images/hero-medium.jpg">
-                <img src="images/hero-small.jpg" alt="Hero" width="390" height="390">
+                <source media="(min-width: 1100px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 820px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-small.webp" alt="Hero" width="390" height="390">
             </picture>
         </section>
 
@@ -59,7 +59,7 @@
         <!-- WE ARE -->
         <section class="container we-are">
             <div>
-                <img src="images/babygrogu-milk.jpg" alt="Natalia & Kelya">
+                <img src="images/babygrogu-milk.webp" alt="Natalia & Kelya">
             </div>
             <div>
                 <h2>Hi! We are Natalia & Kelya,</h2>
@@ -71,34 +71,39 @@
         <!-- GIFT OPTIONS -->
         <section class="container gift-options">
             <h2>Looking for Unique Gift Options?</h2>
-            <div>
-                <img class="card" src="images/notebook.jpg" alt="personalized-notebooks">
-                <button>Personalized Notebooks</button>
-            </div>
-            <div>
-                <img class="card" src="images/plushies.jpg" alt="plushies">
-                <button>Plushies</button>
-            </div>
-            <div>
-                <img class="card" src="images/jewerly.jpg" alt="jewerly">
-                <button>Jewelry</button>
+            <div class="gallery">
+                <div class="card">
+                    <img src="images/notebook.webp" alt="personalized-notebooks">
+                    <button>Notebooks</button>
+                </div>
+                <div class="card">
+                    <img src="images/plushies.webp" alt="plushies">
+                    <button>Plushies</button>
+                </div>
+                <div class="card">
+                    <img src="images/jewerly.webp" alt="jewerly">
+                    <button>Jewelry</button>
+                </div>
             </div>
         </section>
 
         <!-- DELIVERY -->
         <section class="container delivery">
-            <div class="card">
-                <h3>National Shipments</h3>
-                <img src="images/emoji-national-shipment.png" alt="national">
+            <h2>Delivery Information</h2>
+            <div class="gallery">
+                <div class="card">
+                    <h3>National Shipments</h3>
+                    <img src="images/emoji-national-shipment.png" alt="national">
+                </div>
+                <div class="card">
+                    <h3>Delivery All Around The City</h3>
+                    <img src="images/emoji-delivery.png" alt="city">
+                </div>
+                <div class="card">
+                    <h3>Online Payments</h3>
+                    <img src="images/emoji-online-payment.png" alt="payment">
+                </div>            
             </div>
-            <div class="card">
-                <h3>Delivery All Around The City</h3>
-                <img src="images/emoji-delivery.png" alt="city">
-            </div>
-            <div class="card">
-                <h3>Online Payments</h3>
-                <img src="images/emoji-online-payment.png" alt="payment">
-            </div>            
         </section>
 
         <!-- INSTAGRAM -->
@@ -113,9 +118,11 @@
         <section class="container clients">
             <h2>Clients Reactions</h2>
             <p>Here are some clients' reactions recieving their gifts...</p>
-            <img class="card" src="images/arboles-navidad.webp" alt="whatsapp-capture">
-            <img class="card" src="images/arboles-navidad.webp" alt="whatsapp-capture">
-            <img class="card" src="images/arboles-navidad.webp" alt="whatsapp-capture">
+            <div class="gallery">                
+                <img class="card" src="images/whatsapp-1.jpg" alt="whatsapp-capture">
+                <img class="card" src="images/whatsapp-2.jpg" alt="whatsapp-capture">
+                <img class="card" src="images/whatsapp-3.jpg" alt="whatsapp-capture">
+            </div>
         </section>
         
     </main>

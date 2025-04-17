@@ -49,6 +49,8 @@ button {
     color: white;
     font-family: 'Sniglet';
     font-size: 120%;
+    max-height: fit-content;
+    max-width: fit-content;
     padding: 10px 40px;
     margin: 10px;
     border-radius: 100px;
@@ -59,6 +61,7 @@ button:hover {
     background-color: var(--chamoisee);
 }
 
+
 /* ------- HEADER ------- */
 header {
     width: 100%;
@@ -67,18 +70,21 @@ header {
     font-size: large;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+#logo {
+    margin: 10px 30px 10px 10px;
 }
 
 .nav-bar {
     display: flex;
     z-index: 1000;
 }
-
 .nav-menu {
     display: flex;
+    align-items: center;
 }
-
 .nav-link {
     display: block;
     color: white;
@@ -88,12 +94,10 @@ header {
     transition: .2s;
     margin: 0 5px;
 }
-
 .nav-link:hover {
     background-color: var(--cornsilk);
     color: var(--bistre);
 }
-
 .hamburger {
     display: none;
 }
@@ -104,12 +108,12 @@ header {
     display: flex;
     flex-direction: column;
 }
-
 .hero img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 
 /* general */
 .container {
@@ -119,13 +123,20 @@ header {
     padding: 30px;
 }
 
+.gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
 .card {
     background-color: white;
-    flex-wrap: wrap;
-    height: auto;
-    width: 300px;
-    box-shadow: var(--box-shadow);
+    width: 250px; 
     border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    object-fit: cover;
 }
 
 /* sections */
@@ -133,6 +144,7 @@ header {
     background-color: var(--chamoisee);
     color: white;
 }
+
 .we-are img {
     width: 300px;
     height: auto;
@@ -141,8 +153,11 @@ header {
     box-shadow: var(--box-shadow);
 }
 
-.gift-options {
-    background-color: white;
+.gift-options img {
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
 }
 
 .gift-options button {
@@ -155,20 +170,16 @@ header {
 
 .delivery {
     background-color: var(--citron);
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
 }
 
 .delivery img {
     width: 100px;
+    margin: 10px;
 }
 
 .clients {
     background-color: var(--bistre);
     color: white;
-    gap: 20px;
 }
 
 /* ------- FOOTER ------- */
